@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="shortcut icon" type="x-icon" href="images/logo.png">
+      
+    <title>Services | Chroma Music</title>
+    <meta content="Services page for Chroma Music" name="description">
+    <meta content="Music, Musical Equipment, Instruments" name="keywords">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+      
+    <!-- Template Main CSS File -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ===================== Navbar ====================== -->
+<header>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>  
+        <a href="index.html"><h2>Chroma Music</h2></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+</header>
+<!-- ============= end navbar ============== -->
+
+<!-- ===================== Section =================== -->
+<section>
+    <h1>Service Requests</h1>
+    <p>
+        Put in a service request colsultation here. To make a request, look at our employees and the day they are available and input both 
+        their name and the date in the form below, followed by your phone number. The employee will call you on the date inputed.
+        You can request multiple consultations. Time of day contacted is between 8am and 11am Moutain Standard Time.
+    </p>
+    <ul>
+        <li>John Smith  02/22/2022</li>
+        <li>Bobo Trumeter  02/30/2022</li>
+        <li>Tracey McCloud  03/01/2022</li>
+        <li>LeeAnne Freeman  03/15/2022</li>
+    </ul>
+</section>
+
+<!-- ======== end section ================= -->
+
+<!-- ==================== Main Body ====================-->
+<section>
+    <h2>Request Form</h2>
+    <div id="tasks">
+        <label for="task_list">Requests</label><br>
+        <textarea id="task_list" rows="6" cols="50"></textarea>
+    </div>
+    <div>
+        <label for="task">Name:</label><br>
+        <input type="text" name="task" id="task">
+    </div>
+    <div>
+        <label for="due_date">Date:</label><br>
+        <input type="text" name="due_date" id="due_date">
+    </div>
+    <div>
+        <label for="user">Phone Number:</label><br>
+        <input type="text" name="user" id="user">
+    </div>
+    <div>
+        <input type="button" id="add_task" value="Add Task"><br>
+        <input type="button" id="clear_tasks" value="Clear Tasks"><br>
+    </div>
+</section>
+
+
+<!-- ========= end main ============ -->
+
+<!-- ================ current date section ===================== -->
+<h1>Current Date</h1>
+<p id="p1"></p>
+<p id="p2"></p>
+<script>
+
+    var today = new Date();
+    
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    
+    var dateTime = date+' '+time;
+
+    document.getElementById("p1").innerHTML = dateTime;
+    
+    </script>
+
+<!-- =========== end date time ========= -->
+
+<!-- ====================== Footer ====================== -->
+<footer>
+    <div class="container">
+        <div>
+            <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+            <a href="index.html"><h2>Chroma Music</h2></a>
+            <p>
+                666 Randolph Avenue <br>
+                Boise, ID 83712<br>
+                United States <br>
+                <strong>Phone:</strong> +1 208 555 5555<br>
+                <strong>Email:</strong> chromamusic@
+                gmail.com<br>
+            </p>
+        </div>
+        <div id="link">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div id="newsSec">
+            <h2>Newsletter</h2>
+            <p>
+                Get updates on our latest designs, discounts and more!
+                Enter your email below (you can opt out at any time)
+            </p>
+            <div>
+                <label for="email">E-Mail:</label>
+                <input type="text" name="email" id="newsEmail">
+                <span></span>
+            </div>
+            <div>
+                <label></label>
+                <input type="button" id="newsSave" value="Sign Up">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- ========== end footer ===========-->
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

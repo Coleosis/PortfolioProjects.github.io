@@ -1,0 +1,243 @@
+
+/* ------------- Global Styling ------------- */
+body {
+	margin: 0;
+	background: black;
+	font-weight: 500;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+img {
+	width: 720px;
+	height: 400px;
+}
+
+h1, h2, h3, h4 {
+	color:rgb(7, 184, 30);
+
+}
+
+p {
+	font-family: 'Nanum Gothic', sans-serif;
+	color: white;
+}
+
+.cent-all-itm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	display: inline-flex;
+}
+
+section{
+	color: white;
+}
+
+#about {
+	color: black;
+}
+
+
+
+
+
+
+/* -------Navbar styling------- */
+
+.logo {
+	float: left;
+	max-width: 60px;
+	max-height: 60px;
+}
+
+nav {
+	height: 80px;
+	background: black;
+}
+
+nav h2 {
+
+	width: 180px;
+	position: absolute;
+	top: 17px;
+	left: 8%;
+}
+
+nav img{
+	width: 50px;
+	position: absolute;
+	top: 17px;
+	left: 5%;
+}
+
+
+nav ul {
+	float: right;
+	margin-right: 25px;
+
+}
+
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 15px;
+}
+
+nav ul li a {
+	position: relative;
+	color:rgb(7, 184, 30);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	padding: 5px 0;
+}
+
+nav ul li a:before {
+	position:absolute;
+	content:'';
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width:100%;	
+
+}
+
+nav a:hover {
+	color: white;
+	cursor: pointer;
+}
+
+
+@media (max-width: 1118px) {
+	nav img h2{
+		left: 8%;
+	} 
+}
+
+@media (max-width: 944px) {
+	nav img h2 {
+		left: 6%;
+		top: 20px;
+		width: 130px;
+	} 
+	nav ul li a{
+		font-size: 17px;
+	}
+}
+
+@media (max-width: 860px) {
+
+
+
+	ul{
+		
+		width: 100%;
+		height: 400px;
+		background: black;
+		top: 90px;
+		text-align: center;
+		transition: all .5s;
+		
+	}
+	nav ul li{
+		display:block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a{
+		font-size: 20px;
+	}
+
+}
+
+/* ----------------- Main index styling --------------------- */
+main {
+	margin: 100px;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	
+}
+
+@media (max-width: 860px) {
+	main {
+		top: 100px;
+	}
+}
+
+
+/* ---------------- Home page Carousel styling ----------*/
+
+#slider {
+	width: 720px;
+	height: 400px;
+	overflow: hidden;
+	
+}
+
+#slider .slides {
+	display: block;
+	width: 6000px;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+}
+
+#slider .slide {
+	float: left;
+	list-style-type: none;
+	width: 720px;
+	height: 400px;
+}
+
+/* ----------- Footer Styling ------------- */
+footer {
+	background: black;
+	margin: 50px;
+}
+
+footer label{
+	color: white;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+footer h2{
+	color: rgb(7, 184, 30);
+}
+
+footer p{
+	color: white;
+}
+
+#link {
+	padding-left: 30%;
+	text-align: center;
+}
+
+#newsSec {
+	padding-left: 27%;
+}
+@media (max-width: 860px) {
+
+	.container {
+		display:inline-block;
+	}
+	#link {
+		padding:0;
+	}
+	#newsSec {
+		padding:0;
+	}
+
+}
+
+

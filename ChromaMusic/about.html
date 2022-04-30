@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="shortcut icon" type="x-icon" href="images/logo.png">
+      
+    <title>About | Chroma Music</title>
+    <meta content="About page for Chroma Music" name="description">
+    <meta content="Music, Musical Equipment, Instruments" name="keywords">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+      
+    <!-- Template Main CSS File -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ===================== Navbar ====================== -->
+<header>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>  
+        <a href="index.html"><h2>Chroma Music</h2></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+</header>
+<!-- ============= end navbar ============== -->
+
+<!-- ==================== Main Body ====================-->
+<section>
+    <h1>About Us</h1>
+    <p>We are a fairly new company established in September, 2021. A few of us had all practiced wood and metal working with a background as electrical
+        technicians, and we all played in a band. We decided our band sucked so we should try our hand at making instruments. Turns out we are very good at that!
+        After a couple years of practice we decided to start our own custom instrument company to make peoples dreams come true. Please navigate to our 
+        <a href="services.html">SERVICES</a> page to explain and request your very own custom made instrument!
+    </p>
+
+</section>
+<div>
+    <h1>Frequently Asked Questions</h1>   
+    <div id="accordionFaq">
+        <h3>Is there a service charge?</h3>
+        <div>
+            <p id="about">Our creators main income is service charges, so we charge an automatic 20% gratuity.</p>
+        </div>
+        <h3>What kind of instruments do you make?</h3>
+        <div>
+            <p id="about">We currently create custom acoustic and electric forms of Guitar, Bass, Ukelele, and Mandolin.</p>
+        </div>
+        <h3>What happens if I cancel my order?</h3>
+        <div>
+            <p id="about">Once an order is placed it is final. If you cancel an order once an order has been placed, a cancelation fee of $200 
+                will be charged to the credit card on file. You will also be charged for any materials ordered as well as the cancelation fee.</p>
+        </div>    
+    </div>
+    <script>
+        $('#accordionFaq').accordion({
+            animate: true,
+            collapsible: true,
+            active: false
+        });
+    </script>
+</div>
+
+<!-- ========= end main ============ -->
+
+<!-- ====================== Footer ====================== -->
+<footer>
+    <div class="container">
+        <div>
+            <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+            <a href="index.html"><h2>Chroma Music</h2></a>
+            <p>
+                666 Randolph Avenue <br>
+                Boise, ID 83712<br>
+                United States <br>
+                <strong>Phone:</strong> +1 208 555 5555<br>
+                <strong>Email:</strong> chromamusic@
+                gmail.com<br>
+            </p>
+        </div>
+        <div id="link">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div id="newsSec">
+            <h2>Newsletter</h2>
+            <p>
+                Get updates on our latest designs, discounts and more!
+                Enter your email below (you can opt out at any time)
+            </p>
+            <div>
+                <label for="email">E-Mail:</label>
+                <input type="text" name="email" id="newsEmail">
+                <span></span>
+            </div>
+            <div>
+                <label></label>
+                <input type="button" id="newsSave" value="Sign Up">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- ========== end footer ===========-->
+
+
+<script src="main.js"></script>
+</body>
+</html>

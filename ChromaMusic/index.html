@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<!--*************************************************************************************************************
+
+              *** MODIFICATION LOG ***
+
+          #Original Author: Cole Carlson
+          #Date Created: 01/20/2022
+          #Current Version: 1.2
+          #Date Last Modified: 01/28/2022
+          #Last Modified by: Cole Carlson
+          #Modification log:
+
+              Version 0.0 - 01/20/2022 - Files created and Bootstrap pulled in
+              Version 0.5 - 01/21/2022 - Adjusted Home page and created internal JavaScript
+              Version 1.0 - 01/21/2022 - Turned in final product of required version of site | Project 1
+              Version 1.5 - 01/25/2022 - Created 2 more html files, ABOUT page and SERVICES page | basic layout and content created
+              Version 2.0 - 01/28/2022 - Added JavaScript, attempted to fix design issues | submitted current design, might completely overhaul
+              Version 2.2 - 02/03/2022 - Created 2 new html pages
+              Version 2.6 - 02/05/2022 - Added JavaScript for FAQS and portfolio | No debuging yet
+              Version 3.0 - 02/06/2022 - Tried to debug javascript, ran out of time. Turned in project as is
+              Version 4.0 - 02/07/2022 - Started website from scratch, saving the layout and pages and intent | made html pages
+              Version 4.2 - 02/08/2022 - Made Slider javascript | made barebones styling
+              Version 4.4 - 02/09/2022 - Made FAQ accordion javascript
+              Version 4.6 - 02/10/2022 - Made contact form, newsletter and consultation form
+              Version 5.0 - 02/11/2022 - Finished required javascript, and more styling
+              Version 5.5 - 02/14/2022 - Finished styling of Nav and Footer sections
+              Version 5.8 - 02/15/2022 - Added additional text and images to pages
+              Version 6.0 - 02/16/2022 - Finished styling and positioning of all pages to best of ability | Website prototype finished
+
+
+**************************************************************************************************************-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="shortcut icon" type="x-icon" href="images/logo.png">
+      
+    <title>Chroma Music</title>
+    <meta content="Landing page for Chroma Music" name="description">
+    <meta content="Music, Musical Equipment, Instruments" name="keywords">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+      
+    <!-- Template Main CSS File -->
+    <link href="style.css" rel="stylesheet">
+
+    
+</head>
+
+<body>
+
+<!-- ===================== Navbar ====================== -->
+<header>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>  
+        <a href="index.html"><h2>Chroma Music</h2></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+</header>
+<!-- ============= end navbar ============== -->
+
+<!-- ==================== Main Body ==================== -->
+<main>
+    <div>
+        <h1>Welcome to Chroma Music</h1>
+        <p>Making your dream instrument a reality</p>
+        <div id="slider">
+            <ul class="slides">
+                <li class="slide"><img src="images/stockbass1.jpg"></li>
+                <li class="slide"><img src="images/stockguitar1.jpg"></li>
+                <li class="slide"><img src="images/stockmandolin1.jpg"></li>
+                <li class="slide"><img src="images/stockuke1.jpg"></li>
+            </ul>
+        </div>
+
+    </div>
+</main> 
+
+
+<!-- ========= end main ============ -->
+
+<!-- ====================== Footer ====================== -->
+<footer>
+    <div class="container">
+        <div>
+            <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+            <a href="index.html"><h2>Chroma Music</h2></a>
+            <p>
+                666 Randolph Avenue <br>
+                Boise, ID 83712<br>
+                United States <br>
+                <strong>Phone:</strong> +1 208 555 5555<br>
+                <strong>Email:</strong> chromamusic@
+                gmail.com<br>
+            </p>
+        </div>
+        <div id="link">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div id="newsSec">
+            <h2>Newsletter</h2>
+            <p>
+                Get updates on our latest designs, discounts and more!
+                Enter your email below (you can opt out at any time)
+            </p>
+            <div>
+                <label for="email">E-Mail:</label>
+                <input type="text" name="email" id="newsEmail">
+                <span></span>
+            </div>
+            <div>
+                <label></label>
+                <input type="button" id="newsSave" value="Sign Up">
+            </div>
+        </div>
+    </div>
+</footer> 
+
+<!-- ========== end footer ===========-->
+
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
