@@ -1,0 +1,191 @@
+/*Colors and styling for background and fonts in pallete*/
+.color-light {
+    color: #FFEFCF;
+}
+
+.bg-color-light {
+    background-color: #FFEFCF;
+    ;
+}
+
+.color-yellow {
+    background-color: #F8D213;
+}
+
+.scotts-brown {
+    background-image: linear-gradient(#762F0A, #905739, #762F0A);
+}
+
+.color-orange {
+    background-color: #FF7A00;
+}
+
+.color-red {
+    background-color: #D44000;
+}
+
+.color-brown {
+    background-color: #864000;
+}
+
+
+.txt-brown {
+    color: #864000;
+}
+
+/* style for donation page*/
+#download {
+    padding: 5em;
+}
+
+.drop-off-hours>li {
+    text-decoration: none;
+    /* <a href="https://www.flaticon.com/free-icons/farm" title="farm icons">Farm icons created by smashingstocks - Flaticon</a> */
+    list-style-image: url('/SWDV280/images/barn(2).png');
+}
+
+@media only screen and (min-width: 2560px) {
+    #download {
+
+        margin-right: 58em;
+
+
+    }
+
+    #downloadh1 {
+        margin-left: 18.5em;
+        margin-top: 1.5em;
+    }
+}
+
+/* style for donation page
+#download > li{
+text-decoration: none;
+
+list-style-image:url('barn.png');
+}
+*/
+/*Classes for category and product images*/
+.CategoryImage {
+    height: 10vw;
+    width: 'max-width';
+}
+
+.ProductImage {
+    height: 12vw;
+    width: 'max-width';
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .CategoryImage {
+        height: 30vw;
+        width: 'max-width';
+    }
+
+    .ProductImage {
+        height: 30vw;
+        width: 'max-width';
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    #mobileCarousel {
+        display: block;
+        visibility: visible;
+    }
+
+    #desktopCards {
+        display: none;
+        visibility: hidden;
+    }
+
+    #headerImg {
+        width: 40px;
+        display: block;
+        visibility: visible;
+    }
+
+    #headerBrandname {
+        display: none;
+        visibility: hidden;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    #mobileCarousel {
+        display: none;
+        visibility: hidden;
+    }
+
+    #desktopCards {
+        display: block;
+        visibility: visible;
+    }
+
+    #headerImg {
+        width: 40px;
+        display: block;
+        visibility: visible;
+    }
+
+    #headerBrandname {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .media {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .media {
+        position: relative;
+    }
+}
+
+#hero img {
+    object-fit: cover;
+    max-height: 165px;
+    width: 100%;
+    max-width: 554px;
+}
+
+/* log in form styles */
+.form-login {
+    background-color: rgba(245, 238, 238, 0.434);
+    padding: 10px;
+    border-radius: 5%;
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+.product-img {
+    width: 500px;
+    height: 300px;
+}
+
+/* This is for the map on the contact page */
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: auto;
+    height: auto;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: auto;
+    height: 30vh;
+}

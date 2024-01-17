@@ -1,0 +1,10 @@
+#welcome {
+  color: white;
+  padding-left: 2px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+#error {
+  color: red;
+}
